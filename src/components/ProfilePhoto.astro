@@ -1,21 +1,17 @@
 ---
 import { Image } from 'astro:assets';
-import { existsSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
 import { withBase } from '../utils/paths';
 
 const { size = 'md', className = '', priority = false } = Astro.props;
 
-const primaryAssetUrl = new URL('../assets/Xuke_hu.jpeg', import.meta.url);
-const fallbackAssetUrl = new URL('../assets/profile.jpg', import.meta.url);
-const hasPrimary = existsSync(fileURLToPath(primaryAssetUrl));
-const hasFallback = existsSync(fileURLToPath(fallbackAssetUrl));
-let localImage = null;
-if (hasPrimary) {
-  localImage = (await import('../assets/Xuke_hu.jpeg')).default;
-} else if (hasFallback) {
-  localImage = (await import('../assets/profile.jpg')).default;
-}
+const imageMap = import.meta.glob('../assets/*.{jpg,jpeg,png}', { eager: true });
+const primaryKey = Object.keys(imageMap).find((key) => key.endsWith('/Xuke_hu.jpeg'));
+const fallbackKey = Object.keys(imageMap).find((key) => key.endsWith('/profile.jpg'));
+const localImage = primaryKey
+  ? imageMap[primaryKey].default
+  : fallbackKey
+    ? imageMap[fallbackKey].default
+    : null;
 
 const sizeMap = {
   sm: 96,
