@@ -4,44 +4,58 @@
     "year": "2021",
     "type": "Open-source software",
     "description": "Deep learning-based place name extractor using gazetteers.",
-    "tags": ["Toponym extraction", "Gazetteers"],
-    "link": "",
-    "placeholder": "GitHub: TODO (add link)"
+    "tags": [
+      "Toponym extraction",
+      "Gazetteers"
+    ],
+    "link": "https://github.com/uhuohuy/GazPNE",
+    "linkLabel": "GitHub"
   },
   {
     "name": "GazPNE2",
     "year": "2022",
     "type": "Open-source software",
     "description": "Place name extractor leveraging BERT, BERTweet, and gazetteers.",
-    "tags": ["BERT", "Microblogs"],
-    "link": "",
-    "placeholder": "GitHub: TODO (add link)"
+    "tags": [
+      "BERT",
+      "Microblogs"
+    ],
+    "link": "https://github.com/uhuohuy/GazPNE2",
+    "linkLabel": "GitHub"
   },
   {
     "name": "Voting",
     "year": "2023",
     "type": "Open-source software",
     "description": "Voting-based approach for toponym resolution.",
-    "tags": ["Toponym resolution"],
-    "link": "",
-    "placeholder": "GitHub: TODO (add link)"
+    "tags": [
+      "Toponym resolution"
+    ],
+    "link": "https://github.com/uhuohuy/Voting",
+    "linkLabel": "GitHub"
   },
   {
     "name": "LLM-Geocoding",
     "year": "2024 – Present",
     "type": "Open-source software",
     "description": "Lightweight LLM-based toponym resolution.",
-    "tags": ["LLM", "GeoAI"],
-    "link": "",
-    "placeholder": "GitHub: TODO (add link)"
+    "tags": [
+      "LLM",
+      "GeoAI"
+    ],
+    "link": "https://github.com/uhuohuy/LLM-Geocoding",
+    "linkLabel": "GitHub"
   },
   {
     "name": "DLRGeoTweet",
     "year": "2024 – Present",
     "type": "Dataset",
     "description": "Geocoding dataset with extensive fine-grained places.",
-    "tags": ["Social media", "Geocoding"],
-    "link": "",
-    "placeholder": "GitHub: TODO (add link)"
+    "tags": [
+      "Social media",
+      "Geocoding"
+    ],
+    "link": "https://github.com/uhuohuy/DLRGeoTweet",
+    "linkLabel": "GitHub"
   }
 ]

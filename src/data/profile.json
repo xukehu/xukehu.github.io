@@ -11,7 +11,7 @@
   "gender": "Male",
   "researchKeywords": [
     "GeoAI",
-    "Geographic information extraction",
+    "Geoparsing",
     "Toponym recognition and resolution",
     "Geospatial text analytics",
     "Multilingual text",
@@ -25,12 +25,13 @@
     "website": "https://uhuohuy.github.io",
     "scholar": "https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate",
     "researchgate": "https://www.researchgate.net/profile/Xuke-Hu-2?ev=hdr_xprf",
-    "orcid": "",
+    "orcid": "https://orcid.org/0000-0002-5649-0243",
     "sameAs": [
       "https://github.com/uhuohuy",
       "https://uhuohuy.github.io",
       "https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate",
-      "https://www.researchgate.net/profile/Xuke-Hu-2?ev=hdr_xprf"
+      "https://www.researchgate.net/profile/Xuke-Hu-2?ev=hdr_xprf",
+      "https://orcid.org/0000-0002-5649-0243"
     ]
   },
   "linksList": [
@@ -52,8 +53,7 @@
     },
     {
       "label": "ORCID",
-      "url": "",
-      "note": "TODO: add ORCID URL"
+      "url": "https://orcid.org/0000-0002-5649-0243"
     }
   ],
   "languages": [
@@ -76,7 +76,7 @@
       "location": "Jena, Germany",
       "period": "September 2023 – Present",
       "details": [
-        "Geographic information extraction from texts",
+        "Geoparsing from texts",
         "Geospatial Artificial Intelligence (GeoAI)",
         "Indoor mapping, localization, and navigation",
         "Volunteered geographic information (VGI)"
@@ -88,7 +88,7 @@
       "location": "Jena, Germany",
       "period": "December 2019 – August 2023",
       "details": [
-        "Geographic information extraction from texts",
+        "Geoparsing from texts",
         "Utilizing social media data for urban planning and disaster management",
         "Indoor mapping, localization, and navigation",
         "Spatiotemporal big data analysis"
