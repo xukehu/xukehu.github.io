@@ -56,7 +56,13 @@ const types = [...new Set(publications.map((pub) => pub.type))].sort();
           <ul class="mt-4 space-y-3 text-lg text-muted">
             {group.items.map((item) => (
               <li class="flex flex-wrap items-center justify-between gap-2 border-b border-ink-100/70 pb-3 last:border-b-0 dark:border-ink-700/60">
-                <span class="text-ink-800 dark:text-ink-100">{item.role}</span>
+                {item.url ? (
+                  <a class="text-ink-800 hover:text-brand-700 dark:text-ink-100" href={item.url} target="_blank" rel="noreferrer">
+                    {item.role}
+                  </a>
+                ) : (
+                  <span class="text-ink-800 dark:text-ink-100">{item.role}</span>
+                )}
                 <span class="text-muted">{item.period}</span>
               </li>
             ))}

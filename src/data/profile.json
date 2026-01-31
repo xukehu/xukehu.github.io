@@ -23,12 +23,14 @@
   "links": {
     "github": "https://github.com/uhuohuy",
     "website": "https://uhuohuy.github.io",
-    "scholar": "",
-    "researchgate": "",
+    "scholar": "https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate",
+    "researchgate": "https://www.researchgate.net/profile/Xuke-Hu-2?ev=hdr_xprf",
     "orcid": "",
     "sameAs": [
       "https://github.com/uhuohuy",
-      "https://uhuohuy.github.io"
+      "https://uhuohuy.github.io",
+      "https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate",
+      "https://www.researchgate.net/profile/Xuke-Hu-2?ev=hdr_xprf"
     ]
   },
   "linksList": [
@@ -42,13 +44,11 @@
     },
     {
       "label": "Google Scholar",
-      "url": "",
-      "note": "TODO: add Google Scholar URL"
+      "url": "https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate"
     },
     {
       "label": "ResearchGate",
-      "url": "",
-      "note": "TODO: add ResearchGate URL"
+      "url": "https://www.researchgate.net/profile/Xuke-Hu-2?ev=hdr_xprf"
     },
     {
       "label": "ORCID",
