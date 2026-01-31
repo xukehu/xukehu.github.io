@@ -99,7 +99,7 @@ public/
 
 - Dark/light theme toggle is persistent (localStorage) and respects `prefers-color-scheme` by default.
 - SEO metadata, OpenGraph/Twitter cards, and JSON-LD Person schema are included.
-- `sitemap-index.xml` is generated via `@astrojs/sitemap`.
+- `sitemap.xml` is generated during build from `src/pages/sitemap.xml.ts`.
 
 ## License
 
