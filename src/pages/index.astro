@@ -96,9 +96,9 @@ const types = [...new Set(publications.map((pub) => pub.type))].sort();
     <SectionHeader title="Contact" subtitle="Get in touch for research collaborations and academic inquiries." />
     <div class="section-card p-6 max-w-xl">
       <h3 class="text-3xl font-semibold text-ink-900 dark:text-white">{profile.name}</h3>
-      <p class="mt-2 text-xl text-muted">{profile.affiliation}</p>
-      <p class="text-xl text-muted">{profile.address}</p>
-      <p class="mt-4 text-xl text-muted">Email: {profile.email}</p>
+      <p class="mt-2 text-2xl text-muted">{profile.affiliation}</p>
+      <p class="text-2xl text-muted">{profile.address}</p>
+      <p class="mt-4 text-2xl text-muted">Email: {profile.email}</p>
       <div class="mt-4 flex gap-3">
         <a class="badge" href={`mailto:${profile.email}`}>Email me</a>
       </div>
