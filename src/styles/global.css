@@ -98,6 +98,10 @@ a:hover {
   @apply rounded-full px-4 py-2 text-2xl font-medium transition;
 }
 
+.site-avatar {
+  @apply h-12 w-12 text-base;
+}
+
 .nav-pill.active {
   @apply bg-brand-600 text-white shadow;
 }
