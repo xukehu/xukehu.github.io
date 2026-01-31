@@ -19,7 +19,10 @@ const baseUrl = withBase('/');
 ---
 <header class="sticky top-0 z-40 border-b border-ink-100/60 bg-white/80 backdrop-blur-md dark:border-ink-800/60 dark:bg-ink-900/70">
   <div class="mx-auto flex max-w-content flex-wrap items-center justify-between gap-4 px-6 py-4">
-    <div class="flex-1"></div>
+    <a href={withBase('/')} class="flex items-center gap-3">
+      <div class="site-avatar rounded-full bg-brand-600 text-white grid place-items-center font-semibold">XH</div>
+      <div class="text-lg font-semibold text-ink-800 dark:text-ink-100">{profile.name}</div>
+    </a>
     <nav class="flex flex-wrap items-center gap-2">
       {navItems.map((item) => (
         <a
