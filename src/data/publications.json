@@ -7,9 +7,12 @@
     "venue": "International Journal of Geographical Information Science (under review)",
     "type": "Journal",
     "doi": "",
-    "url": "",
+    "url": "https://www.tandfonline.com/journals/tgis20",
     "bibtex": "@article{hu2025unitoprank,\n  title={UniTopRank: A scalable and language-independent method for toponym resolution},\n  author={Hu, X. and Sun, Y. and Hecking, T. and Kersten, J. and Klan, F.},\n  journal={International Journal of Geographical Information Science},\n  year={2025},\n  note={Under review}\n}",
-    "tags": ["Under review", "Toponym resolution"]
+    "tags": [
+      "Under review",
+      "Toponym resolution"
+    ]
   },
   {
     "id": "hu-2024-llm-toponym",
@@ -19,9 +22,12 @@
     "venue": "International Journal of Geographical Information Science, 1-28",
     "type": "Journal",
     "doi": "10.1080/13658816.2024.2405182",
-    "url": "",
+    "url": "https://doi.org/10.1080/13658816.2024.2405182",
     "bibtex": "@article{hu2024llm,\n  title={Toponym resolution leveraging lightweight and open-source large language models and geo-knowledge},\n  author={Hu, X. and Kersten, J. and Klan, F. and Farzana, S. M.},\n  journal={International Journal of Geographical Information Science},\n  year={2024},\n  doi={10.1080/13658816.2024.2405182}\n}",
-    "tags": ["LLM", "Toponym resolution"]
+    "tags": [
+      "LLM",
+      "Toponym resolution"
+    ]
   },
   {
     "id": "hu-2024-dlrgeotweet",
@@ -31,9 +37,12 @@
     "venue": "Information Processing & Management, 61(4), 103742",
     "type": "Journal",
     "doi": "10.1016/j.ipm.2024.103742",
-    "url": "",
-    "bibtex": "@article{hu2024dlrgeotweet,\n  title={DLRGeoTweet: A comprehensive social media geocoding corpus featuring fine-grained places},\n  author={Hu, X. and El\u00dfner, T. and Zheng, S. and Serere, H. N. and Kersten, J. and Klan, F. and Qiu, Q.},\n  journal={Information Processing \\& Management},\n  year={2024},\n  volume={61},\n  number={4},\n  pages={103742},\n  doi={10.1016/j.ipm.2024.103742}\n}",
-    "tags": ["Dataset", "Geocoding"]
+    "url": "https://doi.org/10.1016/j.ipm.2024.103742",
+    "bibtex": "@article{hu2024dlrgeotweet,\n  title={DLRGeoTweet: A comprehensive social media geocoding corpus featuring fine-grained places},\n  author={Hu, X. and Elßner, T. and Zheng, S. and Serere, H. N. and Kersten, J. and Klan, F. and Qiu, Q.},\n  journal={Information Processing \\& Management},\n  year={2024},\n  volume={61},\n  number={4},\n  pages={103742},\n  doi={10.1016/j.ipm.2024.103742}\n}",
+    "tags": [
+      "Dataset",
+      "Geocoding"
+    ]
   },
   {
     "id": "gu-2024-floor-localization",
@@ -42,10 +51,12 @@
     "title": "Accurate and efficient floor localization with scalable spiking graph neural networks",
     "venue": "Satellite Navigation, 5(1), 6",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.1186/s43020-024-00127-8",
+    "url": "https://doi.org/10.1186/s43020-024-00127-8",
     "bibtex": "@article{gu2024floor,\n  title={Accurate and efficient floor localization with scalable spiking graph neural networks},\n  author={Gu, F. and Guo, F. and Yu, F. and Long, X. and Chen, C. and Liu, K. and Hu, X. and Guo, S.},\n  journal={Satellite Navigation},\n  year={2024},\n  volume={5},\n  number={1},\n  pages={6}\n}",
-    "tags": ["Indoor localization"]
+    "tags": [
+      "Indoor localization"
+    ]
   },
   {
     "id": "hu-2023-location-reference-survey",
@@ -55,9 +66,12 @@
     "venue": "ACM Computing Surveys, 56(5), 1-37",
     "type": "Journal",
     "doi": "10.1145/3625819",
-    "url": "",
+    "url": "https://doi.org/10.1145/3625819",
     "bibtex": "@article{hu2023location,\n  title={Location reference recognition from texts: A survey and comparison},\n  author={Hu, X. and Zhou, Z. and Li, H. and Hu, Y. and Gu, F. and Kersten, J. and Fan, H. and Klan, F.},\n  journal={ACM Computing Surveys},\n  year={2023},\n  volume={56},\n  number={5},\n  pages={1--37},\n  doi={10.1145/3625819}\n}",
-    "tags": ["Survey", "Geographic information extraction"]
+    "tags": [
+      "Survey",
+      "Geographic information extraction"
+    ]
   },
   {
     "id": "hu-2023-voting-toponym",
@@ -67,9 +81,11 @@
     "venue": "International Journal of Applied Earth Observation and Geoinformation, 117, 103191",
     "type": "Journal",
     "doi": "10.1016/j.jag.2023.103191",
-    "url": "",
+    "url": "https://doi.org/10.1016/j.jag.2023.103191",
     "bibtex": "@article{hu2023voting,\n  title={How can voting mechanisms improve the robustness and generalizability of toponym disambiguation?},\n  author={Hu, X. and Sun, Y. and Kersten, J. and Zhou, Z. and Klan, F. and Fan, H.},\n  journal={International Journal of Applied Earth Observation and Geoinformation},\n  year={2023},\n  volume={117},\n  pages={103191},\n  doi={10.1016/j.jag.2023.103191}\n}",
-    "tags": ["Toponym disambiguation"]
+    "tags": [
+      "Toponym disambiguation"
+    ]
   },
   {
     "id": "hu-2022-gazpne2",
@@ -79,9 +95,12 @@
     "venue": "IEEE Internet of Things Journal, 9(17), 16259-16271",
     "type": "Journal",
     "doi": "10.1109/JIOT.2022.3150967",
-    "url": "",
+    "url": "https://doi.org/10.1109/JIOT.2022.3150967",
     "bibtex": "@article{hu2022gazpne2,\n  title={GazPNE2: A general place name extractor for microblogs fusing gazetteers and pretrained transformer models},\n  author={Hu, X. and Zhou, Z. and Sun, Y. and Kersten, J. and Klan, F. and Fan, H. and Wiegmann, M.},\n  journal={IEEE Internet of Things Journal},\n  year={2022},\n  volume={9},\n  number={17},\n  pages={16259--16271},\n  doi={10.1109/JIOT.2022.3150967}\n}",
-    "tags": ["Toponym extraction", "Transformers"]
+    "tags": [
+      "Toponym extraction",
+      "Transformers"
+    ]
   },
   {
     "id": "hu-2022-gazpne",
@@ -90,10 +109,12 @@
     "title": "GazPNE: annotation-free deep learning for place name extraction from microblogs leveraging gazetteer and synthetic data by rules",
     "venue": "International Journal of Geographical Information Science, 36(2), 310-337",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.1080/13658816.2021.1947507",
+    "url": "https://doi.org/10.1080/13658816.2021.1947507",
     "bibtex": "@article{hu2022gazpne,\n  title={GazPNE: annotation-free deep learning for place name extraction from microblogs leveraging gazetteer and synthetic data by rules},\n  author={Hu, X. and Al-Olimat, H. S. and Kersten, J. and Wiegmann, M. and Klan, F. and Sun, Y. and Fan, H.},\n  journal={International Journal of Geographical Information Science},\n  year={2022},\n  volume={36},\n  number={2},\n  pages={310--337}\n}",
-    "tags": ["Toponym extraction"]
+    "tags": [
+      "Toponym extraction"
+    ]
   },
   {
     "id": "hu-2021-entrances-osm",
@@ -102,10 +123,12 @@
     "title": "Tagging the main entrances of public buildings based on OpenStreetMap and binary imbalanced learning",
     "venue": "International Journal of Geographical Information Science, 35(9), 1773-1801",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.1080/13658816.2020.1861282",
+    "url": "https://doi.org/10.1080/13658816.2020.1861282",
     "bibtex": "@article{hu2021entrances,\n  title={Tagging the main entrances of public buildings based on OpenStreetMap and binary imbalanced learning},\n  author={Hu, X. and Noskov, A. and Fan, H. and Novack, T. and Li, H. and Gu, F. and Shang, J. and Zipf, A.},\n  journal={International Journal of Geographical Information Science},\n  year={2021},\n  volume={35},\n  number={9},\n  pages={1773--1801}\n}",
-    "tags": ["OpenStreetMap"]
+    "tags": [
+      "OpenStreetMap"
+    ]
   },
   {
     "id": "sun-2021-covid",
@@ -114,10 +137,12 @@
     "title": "Spatial inequalities of COVID-19 mortality rate in relation to socioeconomic and environmental factors across England",
     "venue": "Science of The Total Environment, 758, 143595",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.1016/j.scitotenv.2020.143595",
+    "url": "https://doi.org/10.1016/j.scitotenv.2020.143595",
     "bibtex": "@article{sun2021covid,\n  title={Spatial inequalities of COVID-19 mortality rate in relation to socioeconomic and environmental factors across England},\n  author={Sun, Y. and Hu, X. and Xie, J.},\n  journal={Science of The Total Environment},\n  year={2021},\n  volume={758},\n  pages={143595}\n}",
-    "tags": ["Spatial analysis"]
+    "tags": [
+      "Spatial analysis"
+    ]
   },
   {
     "id": "hu-2021-room-semantics",
@@ -126,10 +151,12 @@
     "title": "Room semantics inference using random forest and relational graph convolutional networks: A case study of research building",
     "venue": "Transactions in GIS, 25(1), 71-111",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.1111/tgis.12664",
+    "url": "https://doi.org/10.1111/tgis.12664",
     "bibtex": "@article{hu2021room,\n  title={Room semantics inference using random forest and relational graph convolutional networks: A case study of research building},\n  author={Hu, X. and Hu, X. and Fan, H. and Noskov, A. and Wang, Z. and Zipf, A. and Gu, F. and Shang, J.},\n  journal={Transactions in GIS},\n  year={2021},\n  volume={25},\n  number={1},\n  pages={71--111}\n}",
-    "tags": ["Indoor mapping"]
+    "tags": [
+      "Indoor mapping"
+    ]
   },
   {
     "id": "hu-2020-salience-models",
@@ -138,10 +165,12 @@
     "title": "Data-driven approach to learning salience models of indoor landmarks by using genetic programming",
     "venue": "International Journal of Digital Earth, 13(11), 1230-1257",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.1080/17538947.2019.1701109",
+    "url": "https://doi.org/10.1080/17538947.2019.1701109",
     "bibtex": "@article{hu2020salience,\n  title={Data-driven approach to learning salience models of indoor landmarks by using genetic programming},\n  author={Hu, X. and Ding, L. and Shang, J. and Fan, H. and Novack, T. and Noskov, A. and Zipf, A.},\n  journal={International Journal of Digital Earth},\n  year={2020},\n  volume={13},\n  number={11},\n  pages={1230--1257}\n}",
-    "tags": ["Indoor landmarks"]
+    "tags": [
+      "Indoor landmarks"
+    ]
   },
   {
     "id": "gu-2019-indoor-survey",
@@ -150,10 +179,13 @@
     "title": "Indoor localization improved by spatial context—A survey",
     "venue": "ACM Computing Surveys (CSUR), 52(3), 1-35",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.1145/3322241",
+    "url": "https://doi.org/10.1145/3322241",
     "bibtex": "@article{gu2019indoor,\n  title={Indoor localization improved by spatial context---A survey},\n  author={Gu, F. and Hu, X. and Ramezani, M. and Acharya, D. and Khoshelham, K. and Valaee, S. and Shang, J.},\n  journal={ACM Computing Surveys},\n  year={2019},\n  volume={52},\n  number={3},\n  pages={1--35}\n}",
-    "tags": ["Survey", "Indoor localization"]
+    "tags": [
+      "Survey",
+      "Indoor localization"
+    ]
   },
   {
     "id": "wu-2021-floorplan",
@@ -162,10 +194,12 @@
     "title": "Indoor mapping and modeling by parsing floor plan images",
     "venue": "International Journal of Geographical Information Science, 35(6), 1205-1231",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.1080/13658816.2020.1781130",
+    "url": "https://doi.org/10.1080/13658816.2020.1781130",
     "bibtex": "@article{wu2021floorplan,\n  title={Indoor mapping and modeling by parsing floor plan images},\n  author={Wu, Y. and Shang, J. and Chen, P. and Zlatanova, S. and Hu, X. and Zhou, Z.},\n  journal={International Journal of Geographical Information Science},\n  year={2021},\n  volume={35},\n  number={6},\n  pages={1205--1231}\n}",
-    "tags": ["Indoor mapping"]
+    "tags": [
+      "Indoor mapping"
+    ]
   },
   {
     "id": "sun-2020-childhood-obesity",
@@ -174,10 +208,12 @@
     "title": "Spatial Patterns of Childhood Obesity Prevalence in Relation to Socioeconomic Factors across England",
     "venue": "ISPRS International Journal of Geo-Information, 9(10), 599",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.3390/ijgi9100599",
+    "url": "https://doi.org/10.3390/ijgi9100599",
     "bibtex": "@article{sun2020obesity,\n  title={Spatial Patterns of Childhood Obesity Prevalence in Relation to Socioeconomic Factors across England},\n  author={Sun, Y. and Hu, X. and Huang, Y. and On Chan, T.},\n  journal={ISPRS International Journal of Geo-Information},\n  year={2020},\n  volume={9},\n  number={10},\n  pages={599}\n}",
-    "tags": ["Spatial analysis"]
+    "tags": [
+      "Spatial analysis"
+    ]
   },
   {
     "id": "sun-2020-crime",
@@ -186,10 +222,12 @@
     "title": "Modeling Local-Scale Violent Crime Rate: A Comparison of Eigenvector Spatial Filtering Models and Conventional Spatial Regression Models",
     "venue": "The Professional Geographer, 1-10",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.1080/00330124.2020.1844574",
+    "url": "https://doi.org/10.1080/00330124.2020.1844574",
     "bibtex": "@article{sun2020crime,\n  title={Modeling Local-Scale Violent Crime Rate: A Comparison of Eigenvector Spatial Filtering Models and Conventional Spatial Regression Models},\n  author={Sun, Y. and Wang, S. and Xie, J. and Hu, X.},\n  journal={The Professional Geographer},\n  year={2020},\n  pages={1--10}\n}",
-    "tags": ["Spatial regression"]
+    "tags": [
+      "Spatial regression"
+    ]
   },
   {
     "id": "hu-2019-grammars",
@@ -198,10 +236,12 @@
     "title": "Feasibility of using grammars to infer room semantics",
     "venue": "Remote Sensing, 11(13), 1535",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.3390/rs11131535",
+    "url": "https://doi.org/10.3390/rs11131535",
     "bibtex": "@article{hu2019grammars,\n  title={Feasibility of using grammars to infer room semantics},\n  author={Hu, X. and Fan, H. and Noskov, A. and Zipf, A. and Wang, Z. and Shang, J.},\n  journal={Remote Sensing},\n  year={2019},\n  volume={11},\n  number={13},\n  pages={1535}\n}",
-    "tags": ["Indoor mapping"]
+    "tags": [
+      "Indoor mapping"
+    ]
   },
   {
     "id": "hu-2017-roof-model",
@@ -210,10 +250,12 @@
     "title": "Roof model recommendation for complex buildings based on combination rules and symmetry features in footprints",
     "venue": "International Journal of Digital Earth, 11(10), 1039-1063",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.1080/17538947.2017.1373867",
+    "url": "https://doi.org/10.1080/17538947.2017.1373867",
     "bibtex": "@article{hu2017roof,\n  title={Roof model recommendation for complex buildings based on combination rules and symmetry features in footprints},\n  author={Hu, X. and Fan, H. and Noskov, A.},\n  journal={International Journal of Digital Earth},\n  year={2017},\n  volume={11},\n  number={10},\n  pages={1039--1063}\n}",
-    "tags": ["Building modeling"]
+    "tags": [
+      "Building modeling"
+    ]
   },
   {
     "id": "sun-2017-bikeshare",
@@ -222,10 +264,12 @@
     "title": "Investigating impacts of environmental factors on the cycling behavior of bicycle-sharing users",
     "venue": "Sustainability, 9(6), 1060",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.3390/su9061060",
+    "url": "https://doi.org/10.3390/su9061060",
     "bibtex": "@article{sun2017bikeshare,\n  title={Investigating impacts of environmental factors on the cycling behavior of bicycle-sharing users},\n  author={Sun, Y. and Mobasheri, A. and Hu, X. and Wang, W.},\n  journal={Sustainability},\n  year={2017},\n  volume={9},\n  number={6},\n  pages={1060}\n}",
-    "tags": ["Urban analysis"]
+    "tags": [
+      "Urban analysis"
+    ]
   },
   {
     "id": "shang-2016-gridiloc",
@@ -234,10 +278,12 @@
     "title": "GridiLoc: A backtracking grid filter for fusing the grid model with PDR using smartphone sensors",
     "venue": "Sensors, 16(12), 2137",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.3390/s16122137",
+    "url": "https://doi.org/10.3390/s16122137",
     "bibtex": "@article{shang2016gridiloc,\n  title={GridiLoc: A backtracking grid filter for fusing the grid model with PDR using smartphone sensors},\n  author={Shang, J. and Hu, X. and Cheng, W. and Fan, H.},\n  journal={Sensors},\n  year={2016},\n  volume={16},\n  number={12},\n  pages={2137}\n}",
-    "tags": ["Indoor positioning"]
+    "tags": [
+      "Indoor positioning"
+    ]
   },
   {
     "id": "hu-2015-wifi-positioning",
@@ -246,10 +292,12 @@
     "title": "Improving Wi-Fi indoor positioning via AP sets similarity and semi-supervised affinity propagation clustering",
     "venue": "International Journal of Distributed Sensor Networks, 11(1), 109642",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.1155/2015/109642",
+    "url": "https://doi.org/10.1155/2015/109642",
     "bibtex": "@article{hu2015wifi,\n  title={Improving Wi-Fi indoor positioning via AP sets similarity and semi-supervised affinity propagation clustering},\n  author={Hu, X. and Shang, J. and Gu, F. and Han, Q.},\n  journal={International Journal of Distributed Sensor Networks},\n  year={2015},\n  volume={11},\n  number={1},\n  pages={109642}\n}",
-    "tags": ["Wi-Fi positioning"]
+    "tags": [
+      "Wi-Fi positioning"
+    ]
   },
   {
     "id": "shang-2015-survey",
@@ -258,10 +306,13 @@
     "title": "Improvement schemes for indoor mobile location estimation: A survey",
     "venue": "Mathematical Problems in Engineering, 2015",
     "type": "Journal",
-    "doi": "",
-    "url": "",
+    "doi": "10.1155/2015/397298",
+    "url": "https://doi.org/10.1155/2015/397298",
     "bibtex": "@article{shang2015survey,\n  title={Improvement schemes for indoor mobile location estimation: A survey},\n  author={Shang, J. and Hu, X. and Gu, F. and Wang, D. and Yu, S.},\n  journal={Mathematical Problems in Engineering},\n  year={2015}\n}",
-    "tags": ["Survey", "Indoor positioning"]
+    "tags": [
+      "Survey",
+      "Indoor positioning"
+    ]
   },
   {
     "id": "hu-2025-scaltoponym-ecir",
@@ -271,9 +322,12 @@
     "venue": "Third International Workshop on Geographic Information Extraction from Texts (GeoExT) at 47th ECIR",
     "type": "Conference",
     "doi": "",
-    "url": "",
+    "url": "https://elib.dlr.de/221349/",
     "bibtex": "@inproceedings{hu2025scalable,\n  title={Scalable Toponym Resolution with LLMs: Accuracy and Speed Optimizations},\n  author={Hu, X. and Kersten, J. and Klan, F.},\n  booktitle={Third International Workshop on Geographic Information Extraction from Texts (GeoExT) at 47th ECIR},\n  year={2025}\n}",
-    "tags": ["Toponym resolution", "LLM"]
+    "tags": [
+      "Toponym resolution",
+      "LLM"
+    ]
   },
   {
     "id": "hu-2024-ecir-llama2",
@@ -283,9 +337,12 @@
     "venue": "Second International Workshop on Geographic Information Extraction from Texts (GeoExT) at 46th ECIR",
     "type": "Conference",
     "doi": "",
-    "url": "",
+    "url": "https://ceur-ws.org/Vol-3683/paper7.pdf",
     "bibtex": "@inproceedings{hu2024ecir,\n  title={Enhancing Toponym Resolution with Fine-Tuned LLMs (Llama2)},\n  author={Hu, X. and Kersten, J.},\n  booktitle={Second International Workshop on Geographic Information Extraction from Texts (GeoExT) at 46th ECIR},\n  year={2024}\n}",
-    "tags": ["Toponym resolution", "LLM"]
+    "tags": [
+      "Toponym resolution",
+      "LLM"
+    ]
   },
   {
     "id": "hu-2022-lbs-voting",
@@ -295,9 +352,11 @@
     "venue": "LBS2022",
     "type": "Conference",
     "doi": "",
-    "url": "",
+    "url": "https://elib.dlr.de/188963/",
     "bibtex": "@inproceedings{hu2022lbs,\n  title={How can voting mechanisms improve the robustness of individual toponym resolution approaches?},\n  author={Hu, X. and Sun, Y. and Kersten, J. and Klan, F.},\n  booktitle={LBS2022},\n  year={2022}\n}",
-    "tags": ["Toponym resolution"]
+    "tags": [
+      "Toponym resolution"
+    ]
   },
   {
     "id": "gu-2021-eventdrop",
@@ -306,10 +365,12 @@
     "title": "EventDrop: data augmentation for event-based learning",
     "venue": "The 30th International Joint Conference on Artificial Intelligence (IJCAI)",
     "type": "Conference",
-    "doi": "",
-    "url": "",
+    "doi": "10.24963/ijcai.2021/97",
+    "url": "https://www.ijcai.org/proceedings/2021/97",
     "bibtex": "@inproceedings{gu2021eventdrop,\n  title={EventDrop: data augmentation for event-based learning},\n  author={Gu, F. and Sng, W. and Hu, X. and Yu, F.},\n  booktitle={Proceedings of the 30th International Joint Conference on Artificial Intelligence},\n  year={2021}\n}",
-    "tags": ["Event-based learning"]
+    "tags": [
+      "Event-based learning"
+    ]
   },
   {
     "id": "hu-2021-giscience",
@@ -319,9 +380,12 @@
     "venue": "11th International Conference on Geographic Information Science",
     "type": "Conference",
     "doi": "10.4230/LIPIcs.GIScience.2021.53",
-    "url": "",
+    "url": "https://doi.org/10.4230/LIPIcs.GIScience.2021.53",
     "bibtex": "@inproceedings{hu2021giscience,\n  title={A general and robust location extraction approach by fusing gazetteers and transformer models},\n  author={Hu, X. and Zhou, Z. and Kersten, J. and Klan, F.},\n  booktitle={11th International Conference on Geographic Information Science},\n  year={2021},\n  doi={10.4230/LIPIcs.GIScience.2021.53}\n}",
-    "tags": ["Gazetteers", "Transformers"]
+    "tags": [
+      "Gazetteers",
+      "Transformers"
+    ]
   },
   {
     "id": "hu-2017-isprs-grammars",
@@ -330,9 +394,11 @@
     "title": "A conceptual framework for indoor mapping by using Grammars",
     "venue": "ISPRS Geospatial Week 2017, 18–22 September, Wuhan, China",
     "type": "Conference",
-    "doi": "",
-    "url": "",
+    "doi": "10.5194/isprs-annals-IV-2-W4-335-2017",
+    "url": "https://doi.org/10.5194/isprs-annals-IV-2-W4-335-2017",
     "bibtex": "@inproceedings{hu2017isprs,\n  title={A conceptual framework for indoor mapping by using Grammars},\n  author={Hu, X. and Fan, H. and Zipf, A. and Shang, J. and Gu, F.},\n  booktitle={ISPRS Geospatial Week 2017},\n  year={2017}\n}",
-    "tags": ["Indoor mapping"]
+    "tags": [
+      "Indoor mapping"
+    ]
   }
 ]
