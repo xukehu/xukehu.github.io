@@ -11,10 +11,10 @@ const { researchKeywords } = profile;
       <ProfilePhoto size="lg" priority={true} />
       <div>
         <div class="text-sm uppercase tracking-[0.2em] text-brand-600">Academic Profile</div>
-        <h1 class="mt-4 text-5xl font-semibold text-ink-900 dark:text-white md:text-6xl">{profile.name}</h1>
-        <p class="mt-4 text-xl text-muted">{profile.title}</p>
-        <p class="text-base text-muted">{profile.affiliation} · {profile.location}</p>
-        <p class="text-base text-muted">{profile.email}</p>
+        <h1 class="mt-4 text-6xl font-semibold text-ink-900 dark:text-white md:text-7xl">{profile.name}</h1>
+        <p class="mt-4 text-2xl text-muted">{profile.title}</p>
+        <p class="text-lg text-muted">{profile.affiliation} · {profile.location}</p>
+        <p class="text-lg text-muted">{profile.email}</p>
         <div class="mt-6 flex flex-wrap items-center gap-3 text-sm">
           <a class="badge" href={`mailto:${profile.email}`}>Email</a>
           <a class="badge" href={`${withBase('/')}#publications`}>Publications</a>

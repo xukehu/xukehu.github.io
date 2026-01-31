@@ -9,14 +9,14 @@ const { items = [] } = Astro.props;
         <div class="section-card p-5">
           <div class="flex flex-wrap items-center justify-between gap-2">
             <div>
-              <h3 class="text-xl font-semibold text-ink-900 dark:text-white">{item.title}</h3>
-              <p class="text-base text-muted">{item.org}</p>
+              <h3 class="text-2xl font-semibold text-ink-900 dark:text-white">{item.title}</h3>
+              <p class="text-lg text-muted">{item.org}</p>
             </div>
-            <div class="text-base text-muted">{item.period}</div>
+            <div class="text-lg text-muted">{item.period}</div>
           </div>
-          {item.location && <p class="mt-1 text-base text-muted">{item.location}</p>}
+          {item.location && <p class="mt-1 text-lg text-muted">{item.location}</p>}
           {item.details?.length ? (
-            <ul class="mt-4 list-disc space-y-2 pl-5 text-base text-ink-700 dark:text-ink-200">
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-lg text-ink-700 dark:text-ink-200">
               {item.details.map((detail) => (
                 <li>{detail}</li>
               ))}

@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  @apply bg-white text-ink-800 dark:bg-ink-900 dark:text-ink-100 antialiased text-[18px] md:text-[20px];
+  @apply bg-white text-ink-800 dark:bg-ink-900 dark:text-ink-100 antialiased text-[20px] md:text-[22px];
 }
 
 ::selection {
@@ -46,7 +46,7 @@ a:hover {
 }
 
 .badge {
-  @apply inline-flex items-center gap-1 rounded-full border border-brand-200/70 bg-brand-50 px-3 py-1 text-xs font-medium text-brand-700 dark:border-brand-400/40 dark:bg-brand-900/40 dark:text-brand-100;
+  @apply inline-flex items-center gap-1 rounded-full border border-brand-200/70 bg-brand-50 px-4 py-2 text-sm font-medium text-brand-700 dark:border-brand-400/40 dark:bg-brand-900/40 dark:text-brand-100;
 }
 
 .text-muted {
@@ -95,7 +95,7 @@ a:hover {
 }
 
 .nav-pill {
-  @apply rounded-full px-4 py-2 text-lg font-medium transition;
+  @apply rounded-full px-4 py-2 text-xl font-medium transition;
 }
 
 .nav-pill.active {
