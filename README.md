@@ -55,7 +55,7 @@ npm run build:project
 
 ## Content updates
 
-All pages are data-driven and live in `src/data/*.json`.
+The site is a single-page layout with section anchors (About, Publications, Projects, Service, Contact). All content is data-driven and lives in `src/data/*.json`.
 
 - Profile + CV details: `src/data/profile.json`
 - Publications: `src/data/publications.json`

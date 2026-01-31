@@ -3,16 +3,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import Timeline from '../components/Timeline.astro';
+import FilterBar from '../components/FilterBar.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+import ProjectCard from '../components/ProjectCard.astro';
 import profile from '../data/profile.json';
 import highlights from '../data/highlights.json';
-import { withBase } from '../utils/paths';
+import publicationsData from '../data/publications.json';
+import projects from '../data/projects.json';
+import service from '../data/service.json';
 
 const description = 'Academic homepage of Dr. rer. nat. Xuke Hu, Senior Researcher at DLR Institute of Data Science, specializing in GeoAI and geospatial information extraction.';
+const publications = [...publicationsData].sort((a, b) => b.year - a.year);
+const years = [...new Set(publications.map((pub) => pub.year))].sort((a, b) => b - a);
+const types = [...new Set(publications.map((pub) => pub.type))].sort();
 ---
 <BaseLayout title="Home" description={description} isHome={true}>
-  <Hero />
-  <section class="mx-auto max-w-content px-6 py-16">
-    <SectionHeader title="Research overview" subtitle="GeoAI-driven methods for extracting and analyzing geospatial information from multilingual text." />
+  <div id="top">
+    <Hero />
+  </div>
+
+  <section id="about" class="mx-auto max-w-content px-6 py-16">
+    <SectionHeader title="About" subtitle="GeoAI-driven methods for extracting and analyzing geospatial information from multilingual text." />
     <div class="grid gap-8 lg:grid-cols-[1.2fr,1fr]">
       <div class="section-card p-6">
         <p class="text-muted">{profile.researchSummary}</p>
@@ -27,17 +38,20 @@ const description = 'Academic homepage of Dr. rer. nat. Xuke Hu, Senior Research
         </div>
       </div>
       <div class="section-card p-6">
-        <h3 class="text-lg font-semibold text-ink-900 dark:text-white">Current position</h3>
+        <h3 class="text-xl font-semibold text-ink-900 dark:text-white">Current position</h3>
         <p class="mt-2 text-muted">{profile.positions[0].title}</p>
-        <p class="text-sm text-muted">{profile.affiliation}</p>
-        <p class="text-sm text-muted">{profile.address}</p>
-        <div class="mt-4 flex gap-3">
-          <a class="badge" href={withBase('/contact/')}>Contact</a>
-          <a class="badge" href={withBase('/about/')}>More about me</a>
-        </div>
+        <p class="text-base text-muted">{profile.affiliation}</p>
+        <p class="text-base text-muted">{profile.address}</p>
+        <div class="mt-4 text-base text-muted">Languages: {profile.languages.join(', ')}</div>
+        <div class="text-base text-muted">Programming: {profile.skills.join(', ')}</div>
       </div>
     </div>
+    <div class="mt-12">
+      <SectionHeader title="Positions" subtitle="Research appointments at DLR." />
+      <Timeline items={profile.positions} />
+    </div>
   </section>
+
   <section class="mx-auto max-w-content px-6 pb-16">
     <SectionHeader title="Highlights" subtitle="Selected milestones from publications, service, and datasets." />
     <div class="card-grid">
@@ -50,8 +64,113 @@ const description = 'Academic homepage of Dr. rer. nat. Xuke Hu, Senior Research
       ))}
     </div>
   </section>
-  <section class="mx-auto max-w-content px-6 pb-20">
-    <SectionHeader title="Positions" subtitle="Research appointments at DLR." />
-    <Timeline items={profile.positions} />
+
+  <section id="publications" class="mx-auto max-w-content px-6 pb-16">
+    <SectionHeader title="Publications" subtitle="Selected journal articles and conference papers. Use search and filters to explore." />
+    <FilterBar years={years} types={types} />
+    <div class="mt-8 grid gap-6" id="publication-list">
+      {publications.map((publication) => (
+        <PublicationCard publication={publication} />
+      ))}
+    </div>
   </section>
+
+  <section id="projects" class="mx-auto max-w-content px-6 pb-16">
+    <SectionHeader title="Projects & datasets" subtitle="Software and data resources developed for toponym extraction, resolution, and geocoding." />
+    <div class="card-grid">
+      {projects.map((project) => (
+        <ProjectCard project={project} />
+      ))}
+    </div>
+  </section>
+
+  <section id="service" class="mx-auto max-w-content px-6 pb-16">
+    <SectionHeader title="Academic service" subtitle="Editorial roles, conference leadership, and scientific governance." />
+    <div class="grid gap-6">
+      {service.map((group) => (
+        <div class="section-card p-6">
+          <h3 class="text-xl font-semibold text-ink-900 dark:text-white">{group.group}</h3>
+          <ul class="mt-4 space-y-3 text-base text-muted">
+            {group.items.map((item) => (
+              <li class="flex flex-wrap items-center justify-between gap-2 border-b border-ink-100/70 pb-3 last:border-b-0 dark:border-ink-700/60">
+                <span class="text-ink-800 dark:text-ink-100">{item.role}</span>
+                <span class="text-muted">{item.period}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section id="contact" class="mx-auto max-w-content px-6 pb-20">
+    <SectionHeader title="Contact" subtitle="Get in touch for research collaborations and academic inquiries." />
+    <div class="section-card p-6 max-w-xl">
+      <h3 class="text-2xl font-semibold text-ink-900 dark:text-white">{profile.name}</h3>
+      <p class="mt-2 text-base text-muted">{profile.affiliation}</p>
+      <p class="text-base text-muted">{profile.address}</p>
+      <p class="mt-4 text-base text-muted">Email: {profile.email}</p>
+      <div class="mt-4 flex gap-3">
+        <a class="badge" href={`mailto:${profile.email}`}>Email me</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (() => {
+      const yearSelect = document.getElementById('filter-year');
+      const typeSelect = document.getElementById('filter-type');
+      const searchInput = document.getElementById('filter-search');
+      const countEl = document.getElementById('filter-count');
+      const cards = Array.from(document.querySelectorAll('[data-bibtex]'));
+
+      const applyFilters = () => {
+        const year = yearSelect?.value || 'all';
+        const type = typeSelect?.value || 'all';
+        const query = (searchInput?.value || '').trim().toLowerCase();
+        let visible = 0;
+
+        cards.forEach((card) => {
+          const matchesYear = year === 'all' || card.dataset.year === year;
+          const matchesType = type === 'all' || card.dataset.type === type;
+          const matchesQuery = !query || (card.dataset.search || '').includes(query);
+          const shouldShow = matchesYear && matchesType && matchesQuery;
+          card.classList.toggle('hidden', !shouldShow);
+          if (shouldShow) visible += 1;
+        });
+
+        if (countEl) {
+          countEl.textContent = `${visible} publication${visible === 1 ? '' : 's'} shown.`;
+        }
+      };
+
+      [yearSelect, typeSelect].forEach((select) => {
+        if (select) select.addEventListener('change', applyFilters);
+      });
+      if (searchInput) searchInput.addEventListener('input', applyFilters);
+
+      document.addEventListener('click', async (event) => {
+        const button = event.target.closest('[data-copy-bibtex]');
+        if (!button) return;
+        const card = button.closest('[data-bibtex]');
+        const bibtex = card?.dataset.bibtex;
+        if (!bibtex) return;
+        try {
+          await navigator.clipboard.writeText(bibtex);
+          const original = button.textContent;
+          button.textContent = 'Copied!';
+          setTimeout(() => {
+            button.textContent = original;
+          }, 1200);
+        } catch (err) {
+          button.textContent = 'Copy failed';
+          setTimeout(() => {
+            button.textContent = 'Copy BibTeX';
+          }, 1200);
+        }
+      });
+
+      applyFilters();
+    })();
+  </script>
 </BaseLayout>

@@ -6,17 +6,7 @@ export async function GET() {
   const basePath = base && base !== '/' ? base : '';
   const effectiveBase = basePath && site.endsWith(basePath) ? '' : basePath;
 
-  const routes = [
-    '/',
-    '/about/',
-    '/publications/',
-    '/projects/',
-    '/teaching/',
-    '/service/',
-    '/awards/',
-    '/cv/',
-    '/contact/'
-  ];
+  const routes = ['/'];
 
   const withBase = (path: string) => {
     if (!effectiveBase) return path;
