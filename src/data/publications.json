@@ -1,20 +1,5 @@
 [
   {
-    "id": "hu-2025-unitoprank",
-    "authors": "Hu, X.; Sun, Y.; Hecking, T.; Kersten, J.; Klan, F.",
-    "year": 2025,
-    "title": "UniTopRank: A scalable and language-independent method for toponym resolution",
-    "venue": "International Journal of Geographical Information Science (under review)",
-    "type": "Journal",
-    "doi": "",
-    "url": "https://www.tandfonline.com/journals/tgis20",
-    "bibtex": "@article{hu2025unitoprank,\n  title={UniTopRank: A scalable and language-independent method for toponym resolution},\n  author={Hu, X. and Sun, Y. and Hecking, T. and Kersten, J. and Klan, F.},\n  journal={International Journal of Geographical Information Science},\n  year={2025},\n  note={Under review}\n}",
-    "tags": [
-      "Under review",
-      "Toponym resolution"
-    ]
-  },
-  {
     "id": "hu-2024-llm-toponym",
     "authors": "Hu, X.; Kersten, J.; Klan, F.; Farzana, S. M.",
     "year": 2024,
