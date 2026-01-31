@@ -26,12 +26,14 @@
     "scholar": "https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate",
     "researchgate": "https://www.researchgate.net/profile/Xuke-Hu-2?ev=hdr_xprf",
     "orcid": "https://orcid.org/0000-0002-5649-0243",
+    "linkedin": "https://www.linkedin.com/in/xuke-hu-156494136/",
     "sameAs": [
       "https://github.com/uhuohuy",
       "https://uhuohuy.github.io",
       "https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate",
       "https://www.researchgate.net/profile/Xuke-Hu-2?ev=hdr_xprf",
-      "https://orcid.org/0000-0002-5649-0243"
+      "https://orcid.org/0000-0002-5649-0243",
+      "https://www.linkedin.com/in/xuke-hu-156494136/"
     ]
   },
   "linksList": [
@@ -54,6 +56,10 @@
     {
       "label": "ORCID",
       "url": "https://orcid.org/0000-0002-5649-0243"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/xuke-hu-156494136/"
     }
   ],
   "languages": [
