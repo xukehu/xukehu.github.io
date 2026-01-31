@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  @apply bg-white text-ink-800 dark:bg-ink-900 dark:text-ink-100 antialiased text-[17px] md:text-[18px];
+  @apply bg-white text-ink-800 dark:bg-ink-900 dark:text-ink-100 antialiased text-[18px] md:text-[20px];
 }
 
 ::selection {
@@ -95,7 +95,7 @@ a:hover {
 }
 
 .nav-pill {
-  @apply rounded-full px-4 py-2 text-base font-medium transition;
+  @apply rounded-full px-4 py-2 text-lg font-medium transition;
 }
 
 .nav-pill.active {

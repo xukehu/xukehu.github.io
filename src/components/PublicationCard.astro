@@ -3,6 +3,7 @@ import Badge from './Badge.astro';
 
 const { publication } = Astro.props;
 const doiUrl = publication.doi ? (publication.doi.startsWith('http') ? publication.doi : `https://doi.org/${publication.doi}`) : '';
+const paperUrl = publication.url || doiUrl;
 const searchText = `${publication.title} ${publication.authors} ${publication.venue}`.toLowerCase();
 ---
 <article
@@ -14,16 +15,28 @@ const searchText = `${publication.title} ${publication.authors} ${publication.ve
 >
   <div class="flex items-start justify-between gap-4">
     <div>
-      <div class="text-sm text-muted">{publication.year}</div>
-      <h3 class="text-xl font-semibold text-ink-900 dark:text-white">{publication.title}</h3>
-      <p class="text-base text-muted">{publication.authors}</p>
-      <p class="mt-1 text-base text-ink-700 dark:text-ink-200">{publication.venue}</p>
+      <div class="text-base text-muted">{publication.year}</div>
+      {paperUrl ? (
+        <h3 class="text-2xl font-semibold text-ink-900 dark:text-white">
+          <a class="no-underline hover:underline" href={paperUrl} target="_blank" rel="noreferrer">{publication.title}</a>
+        </h3>
+      ) : (
+        <h3 class="text-2xl font-semibold text-ink-900 dark:text-white">{publication.title}</h3>
+      )}
+      <p class="text-lg text-muted">{publication.authors}</p>
+      <p class="mt-1 text-lg text-ink-700 dark:text-ink-200">{publication.venue}</p>
     </div>
     <Badge label={publication.type} />
   </div>
-  <div class="flex flex-wrap items-center gap-3 text-base">
+  <div class="flex flex-wrap items-center gap-3 text-lg">
+    {paperUrl && (
+      <a class="badge" href={paperUrl} target="_blank" rel="noreferrer">Paper</a>
+    )}
     {doiUrl && (
       <a class="badge" href={doiUrl} target="_blank" rel="noreferrer">DOI</a>
+    )}
+    {!paperUrl && (
+      <span class="text-muted">Paper link: TODO</span>
     )}
     {publication.tags?.map((tag) => (
       <span class="badge">{tag}</span>
@@ -32,7 +45,7 @@ const searchText = `${publication.title} ${publication.authors} ${publication.ve
   <div class="flex flex-wrap gap-3">
     <button
       type="button"
-      class="rounded-full border border-ink-200/70 px-4 py-2 text-base font-medium text-ink-700 transition hover:border-brand-400 hover:text-brand-700 dark:border-ink-700 dark:text-ink-200"
+      class="rounded-full border border-ink-200/70 px-4 py-2 text-lg font-medium text-ink-700 transition hover:border-brand-400 hover:text-brand-700 dark:border-ink-700 dark:text-ink-200"
       data-copy-bibtex
     >
       Copy BibTeX

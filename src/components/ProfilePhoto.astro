@@ -6,10 +6,14 @@ import { withBase } from '../utils/paths';
 
 const { size = 'md', className = '', priority = false } = Astro.props;
 
-const assetUrl = new URL('../assets/profile.jpg', import.meta.url);
-const hasLocal = existsSync(fileURLToPath(assetUrl));
+const primaryAssetUrl = new URL('../assets/Xuke_hu.jpeg', import.meta.url);
+const fallbackAssetUrl = new URL('../assets/profile.jpg', import.meta.url);
+const hasPrimary = existsSync(fileURLToPath(primaryAssetUrl));
+const hasFallback = existsSync(fileURLToPath(fallbackAssetUrl));
 let localImage = null;
-if (hasLocal) {
+if (hasPrimary) {
+  localImage = (await import('../assets/Xuke_hu.jpeg')).default;
+} else if (hasFallback) {
   localImage = (await import('../assets/profile.jpg')).default;
 }
 
@@ -22,7 +26,7 @@ const sizeMap = {
 const dimension = sizeMap[size] || sizeMap.md;
 const classes = `rounded-2xl border border-white/60 shadow-soft ring-1 ring-ink-200/40 dark:ring-ink-700/60 ${className}`;
 const alt = 'Portrait of Dr. rer. nat. Xuke Hu';
-const fallbackSrc = withBase('/profile.jpg');
+const fallbackSrc = withBase('/Xuke_hu.jpeg');
 ---
 {localImage ? (
   <Image
@@ -42,5 +46,6 @@ const fallbackSrc = withBase('/profile.jpg');
     height={dimension}
     class={classes}
     loading={priority ? 'eager' : 'lazy'}
+    onerror={`this.onerror=null;this.src='${withBase('/profile.jpg')}'`}
   />
 )}

@@ -1,6 +1,6 @@
 # Academic Homepage - Dr. rer. nat. Xuke Hu
 
-A modern, accessible academic website built with Astro + Tailwind CSS. All content is derived from the provided CV PDF.
+A modern, accessible academic website built with Astro + Tailwind CSS. All content is derived from a private CV.
 
 ## Quick start
 
@@ -57,7 +57,7 @@ npm run build:project
 
 The site is a single-page layout with section anchors (About, Publications, Projects, Service, Contact). All content is data-driven and lives in `src/data/*.json`.
 
-- Profile + CV details: `src/data/profile.json`
+- Profile details: `src/data/profile.json`
 - Publications: `src/data/publications.json`
 - Projects/Datasets: `src/data/projects.json`
 - Teaching: `src/data/teaching.json`
@@ -70,17 +70,10 @@ If you deploy under a project subpath, update `profile.links.website` in `src/da
 ### Replace the profile photo
 
 Preferred (optimized):
-- Replace `src/assets/profile.jpg`.
+- Replace `src/assets/Xuke_hu.jpeg`.
 
 Fallback (no build-time optimization):
-- Place an image at `public/profile.jpg`.
-
-### Replace the CV PDF
-
-Replace the placeholder at:
-- `public/cv.pdf`
-
-The `/cv` page will automatically use the updated file.
+- Place an image at `public/Xuke_hu.jpeg`.
 
 ## Project structure
 

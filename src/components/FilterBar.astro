@@ -3,33 +3,33 @@ const { years = [], types = [] } = Astro.props;
 ---
 <div class="section-card p-4">
   <div class="grid gap-4 md:grid-cols-[1fr,1fr,2fr]">
-    <label class="text-base font-medium">
+    <label class="text-lg font-medium">
       Year
-      <select id="filter-year" class="mt-2 w-full rounded-xl border border-ink-200/70 bg-white px-4 py-3 text-base dark:border-ink-700 dark:bg-ink-900">
+      <select id="filter-year" class="mt-2 w-full rounded-xl border border-ink-200/70 bg-white px-4 py-3 text-lg dark:border-ink-700 dark:bg-ink-900">
         <option value="all">All years</option>
         {years.map((year) => (
           <option value={year}>{year}</option>
         ))}
       </select>
     </label>
-    <label class="text-base font-medium">
+    <label class="text-lg font-medium">
       Type
-      <select id="filter-type" class="mt-2 w-full rounded-xl border border-ink-200/70 bg-white px-4 py-3 text-base dark:border-ink-700 dark:bg-ink-900">
+      <select id="filter-type" class="mt-2 w-full rounded-xl border border-ink-200/70 bg-white px-4 py-3 text-lg dark:border-ink-700 dark:bg-ink-900">
         <option value="all">All types</option>
         {types.map((type) => (
           <option value={type}>{type}</option>
         ))}
       </select>
     </label>
-    <label class="text-base font-medium">
+    <label class="text-lg font-medium">
       Search
       <input
         id="filter-search"
         type="search"
         placeholder="Search titles, authors, venues"
-        class="mt-2 w-full rounded-xl border border-ink-200/70 bg-white px-4 py-3 text-base dark:border-ink-700 dark:bg-ink-900"
+        class="mt-2 w-full rounded-xl border border-ink-200/70 bg-white px-4 py-3 text-lg dark:border-ink-700 dark:bg-ink-900"
       />
     </label>
   </div>
-  <p id="filter-count" class="mt-3 text-sm text-muted"></p>
+  <p id="filter-count" class="mt-3 text-base text-muted"></p>
 </div>
