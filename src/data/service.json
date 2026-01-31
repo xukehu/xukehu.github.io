@@ -1,0 +1,85 @@
+[
+  {
+    "group": "Editorial service",
+    "items": [
+      {
+        "role": "Editorial Board Member, The Photogrammetric Record",
+        "period": "since 2026"
+      },
+      {
+        "role": "Guest Editor, International Journal of Geographical Information Science",
+        "period": "2024"
+      },
+      {
+        "role": "Guest Editor, Information Processing & Management",
+        "period": "2023"
+      },
+      {
+        "role": "Guest Editor, Geo-spatial Information Science",
+        "period": "2025"
+      },
+      {
+        "role": "Youth Editorial Board Member, Information Geography",
+        "period": "since 2025"
+      },
+      {
+        "role": "Youth Editorial Board Member, Journal of Spatio-temporal Information",
+        "period": "since 2025"
+      }
+    ]
+  },
+  {
+    "group": "Conference and community leadership",
+    "items": [
+      {
+        "role": "Chair, Joint ISPRS/ISDE Conference on Geo-digitalization for SDGs",
+        "period": "2025"
+      },
+      {
+        "role": "Session Chair, ISPRS Congress",
+        "period": "2026"
+      },
+      {
+        "role": "Chair, First–Fourth GeoExT Workshops at ECIR",
+        "period": "2023–2026"
+      },
+      {
+        "role": "Chair, 7th Geospatial Humanities Workshop at ACM SIGSPATIAL",
+        "period": "2023"
+      },
+      {
+        "role": "Chair, Crowdsourcing for Global Mapping Workshop at ISPRS Geospatial Week",
+        "period": "2023"
+      },
+      {
+        "role": "Session Chair and Panelist, APWeb-WAIM International Joint Conference on Web and Big Data",
+        "period": "2023"
+      }
+    ]
+  },
+  {
+    "group": "Scientific committees and governance",
+    "items": [
+      {
+        "role": "Scientific Council Member, DLR Institute of Data Science",
+        "period": "2025–2027"
+      },
+      {
+        "role": "Fellow, Royal Geographical Society",
+        "period": "since 2026"
+      },
+      {
+        "role": "Secretary, ISPRS ICWG (Technical Commission IV/III)",
+        "period": "2023–2026"
+      },
+      {
+        "role": "Scientific Committee Member, ISPRS TC III Mid-term Symposium",
+        "period": "2024"
+      },
+      {
+        "role": "Scientific Committee Member, MEDDOPLACE Shared Task",
+        "period": "2023"
+      }
+    ]
+  }
+]

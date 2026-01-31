@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+import FilterBar from '../components/FilterBar.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+import publicationsData from '../data/publications.json';
+
+const description = 'Journal and conference publications by Dr. rer. nat. Xuke Hu.';
+const publications = [...publicationsData].sort((a, b) => b.year - a.year);
+const years = [...new Set(publications.map((pub) => pub.year))].sort((a, b) => b - a);
+const types = [...new Set(publications.map((pub) => pub.type))].sort();
+---
+<BaseLayout title="Publications" description={description}>
+  <section class="mx-auto max-w-content px-6 py-16">
+    <SectionHeader title="Publications" subtitle="Selected journal articles and conference papers from the CV. Use search and filters to explore." />
+    <FilterBar years={years} types={types} />
+    <div class="mt-8 grid gap-6" id="publication-list">
+      {publications.map((publication) => (
+        <PublicationCard publication={publication} />
+      ))}
+    </div>
+  </section>
+  <script>
+    (() => {
+      const yearSelect = document.getElementById('filter-year');
+      const typeSelect = document.getElementById('filter-type');
+      const searchInput = document.getElementById('filter-search');
+      const countEl = document.getElementById('filter-count');
+      const cards = Array.from(document.querySelectorAll('[data-bibtex]'));
+
+      const applyFilters = () => {
+        const year = yearSelect?.value || 'all';
+        const type = typeSelect?.value || 'all';
+        const query = (searchInput?.value || '').trim().toLowerCase();
+        let visible = 0;
+
+        cards.forEach((card) => {
+          const matchesYear = year === 'all' || card.dataset.year === year;
+          const matchesType = type === 'all' || card.dataset.type === type;
+          const matchesQuery = !query || (card.dataset.search || '').includes(query);
+          const shouldShow = matchesYear && matchesType && matchesQuery;
+          card.classList.toggle('hidden', !shouldShow);
+          if (shouldShow) visible += 1;
+        });
+
+        if (countEl) {
+          countEl.textContent = `${visible} publication${visible === 1 ? '' : 's'} shown.`;
+        }
+      };
+
+      [yearSelect, typeSelect].forEach((select) => {
+        if (select) select.addEventListener('change', applyFilters);
+      });
+      if (searchInput) searchInput.addEventListener('input', applyFilters);
+
+      document.addEventListener('click', async (event) => {
+        const button = event.target.closest('[data-copy-bibtex]');
+        if (!button) return;
+        const card = button.closest('[data-bibtex]');
+        const bibtex = card?.dataset.bibtex;
+        if (!bibtex) return;
+        try {
+          await navigator.clipboard.writeText(bibtex);
+          const original = button.textContent;
+          button.textContent = 'Copied!';
+          setTimeout(() => {
+            button.textContent = original;
+          }, 1200);
+        } catch (err) {
+          button.textContent = 'Copy failed';
+          setTimeout(() => {
+            button.textContent = 'Copy BibTeX';
+          }, 1200);
+        }
+      });
+
+      applyFilters();
+    })();
+  </script>
+</BaseLayout>

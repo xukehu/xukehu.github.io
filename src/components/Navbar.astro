@@ -1,0 +1,51 @@
+---
+import profile from '../data/profile.json';
+import { withBase } from '../utils/paths';
+
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about/' },
+  { label: 'Publications', href: '/publications/' },
+  { label: 'Projects', href: '/projects/' },
+  { label: 'Teaching', href: '/teaching/' },
+  { label: 'Service', href: '/service/' },
+  { label: 'Awards', href: '/awards/' },
+  { label: 'CV', href: '/cv/' },
+  { label: 'Contact', href: '/contact/' }
+];
+
+const base = import.meta.env.BASE_URL || '/';
+const pathname = Astro.url.pathname;
+const normalizedPath = pathname.startsWith(base) ? `/${pathname.slice(base.length)}`.replace('//', '/') : pathname;
+const isActive = (href) => normalizedPath === href || normalizedPath === href.replace(/\/$/, '') || (href !== '/' && normalizedPath.startsWith(href));
+---
+<header class="sticky top-0 z-40 border-b border-ink-100/60 bg-white/80 backdrop-blur-md dark:border-ink-800/60 dark:bg-ink-900/70">
+  <div class="mx-auto flex max-w-content flex-wrap items-center justify-between gap-4 px-6 py-4">
+    <a href={withBase('/')} class="flex items-center gap-3">
+      <div class="h-10 w-10 rounded-full bg-brand-600 text-white grid place-items-center text-sm font-semibold">XH</div>
+      <div>
+        <div class="text-sm font-semibold text-ink-800 dark:text-ink-100">{profile.name}</div>
+        <div class="text-xs text-muted">{profile.title}</div>
+      </div>
+    </a>
+    <nav class="flex flex-wrap items-center gap-2">
+      {navItems.map((item) => (
+        <a
+          class={`nav-pill ${isActive(item.href) ? 'active' : 'inactive'}`}
+          href={withBase(item.href)}
+        >
+          {item.label}
+        </a>
+      ))}
+      <button
+        id="theme-toggle"
+        class="nav-pill inactive border border-ink-100/70 dark:border-ink-700/60"
+        type="button"
+        aria-pressed="false"
+        aria-label="Toggle dark mode"
+      >
+        Theme
+      </button>
+    </nav>
+  </div>
+</header>

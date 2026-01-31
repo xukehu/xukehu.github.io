@@ -1,0 +1,172 @@
+{
+  "name": "Dr. rer. nat. Xuke Hu",
+  "title": "Senior Researcher (Permanent)",
+  "affiliation": "German Aerospace Center (DLR), Institute of Data Science",
+  "location": "Jena, Germany",
+  "address": "Mälzerstr. 3-5, 07745 Jena, Germany",
+  "email": "xuke.hu@dlr.de",
+  "nationality": "Chinese",
+  "birthplace": "Suizhou City, China",
+  "birthday": "December 20, 1989",
+  "gender": "Male",
+  "researchKeywords": [
+    "GeoAI",
+    "Geographic information extraction",
+    "Toponym recognition and resolution",
+    "Geospatial text analytics",
+    "Multilingual text",
+    "Indoor mapping and localization",
+    "Volunteered geographic information (VGI)",
+    "Spatiotemporal big data"
+  ],
+  "researchSummary": "My primary research focus lies in GeoAI, with particular interest in extracting and analyzing geospatial information embedded in large volumes of unstructured and multilingual natural language text. The goal is to uncover new geospatial perspectives from texts and make such information accessible across languages and regions.",
+  "links": {
+    "github": "https://github.com/uhuohuy",
+    "website": "https://uhuohuy.github.io",
+    "scholar": "",
+    "researchgate": "",
+    "orcid": "",
+    "sameAs": [
+      "https://github.com/uhuohuy",
+      "https://uhuohuy.github.io"
+    ]
+  },
+  "linksList": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/uhuohuy"
+    },
+    {
+      "label": "Website",
+      "url": "https://uhuohuy.github.io"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "",
+      "note": "TODO: add Google Scholar URL"
+    },
+    {
+      "label": "ResearchGate",
+      "url": "",
+      "note": "TODO: add ResearchGate URL"
+    },
+    {
+      "label": "ORCID",
+      "url": "",
+      "note": "TODO: add ORCID URL"
+    }
+  ],
+  "languages": [
+    "Chinese (Native)",
+    "English (Excellent)",
+    "German (Good, B1)"
+  ],
+  "skills": [
+    "Java",
+    "C",
+    "C++",
+    "Python",
+    "R",
+    "Matlab"
+  ],
+  "positions": [
+    {
+      "title": "Senior Researcher (Permanent)",
+      "org": "German Aerospace Center (DLR), Institute of Data Science",
+      "location": "Jena, Germany",
+      "period": "September 2023 – Present",
+      "details": [
+        "Geographic information extraction from texts",
+        "Geospatial Artificial Intelligence (GeoAI)",
+        "Indoor mapping, localization, and navigation",
+        "Volunteered geographic information (VGI)"
+      ]
+    },
+    {
+      "title": "Postdoc",
+      "org": "German Aerospace Center (DLR), Institute of Data Science",
+      "location": "Jena, Germany",
+      "period": "December 2019 – August 2023",
+      "details": [
+        "Geographic information extraction from texts",
+        "Utilizing social media data for urban planning and disaster management",
+        "Indoor mapping, localization, and navigation",
+        "Spatiotemporal big data analysis"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Ph.D. in Geoinformatics",
+      "org": "Heidelberg University",
+      "location": "Heidelberg, Germany",
+      "period": "October 2015 – October 2019",
+      "details": [
+        "Thesis: Building semantic reasoning by using rules based on available geospatial information",
+        "First Supervisor: Prof. Dr. Alexander Zipf",
+        "Second Supervisor: Prof. Dr. Hongchao Fan"
+      ]
+    },
+    {
+      "title": "Master in Software Engineering",
+      "org": "China University of Geosciences (Wuhan)",
+      "location": "Wuhan, China",
+      "period": "September 2012 – July 2015",
+      "details": [
+        "Thesis: Graph Model-Aided Wi-Fi Fingerprinting",
+        "Supervisor: Prof. Dr. Jianga Shang"
+      ]
+    },
+    {
+      "title": "Bachelor in Software Engineering",
+      "org": "China University of Geosciences (Wuhan)",
+      "location": "Wuhan, China",
+      "period": "September 2008 – July 2012",
+      "details": []
+    }
+  ],
+  "patents": [
+    {
+      "title": "Floor Identification Method and System Based on Graph Pulse Neural Network",
+      "year": "2023",
+      "number": "CN116186581A",
+      "status": "Granted by CNIPA",
+      "inventors": "Fuqiang Gu, Fangming Guo, Fangwen Yu, Chao Chen, Kai Liu, Songtao Guo, Xuke Hu, Jianga Shang"
+    },
+    {
+      "title": "An Indoor Navigation Landmark Extraction Method",
+      "year": "2022",
+      "number": "CN110569323A",
+      "status": "Granted by CNIPA",
+      "inventors": "Jianga Shang, Xuke Hu, Lei Ding"
+    },
+    {
+      "title": "Discrete Asynchronous Event Data Enhancement Method",
+      "year": "2022",
+      "number": "CN113177640B",
+      "status": "Granted by CNIPA",
+      "inventors": "Fuqiang Gu, Fangwen Yu, Xuke Hu"
+    },
+    {
+      "title": "Grid Model-Based PDR Indoor Positioning Method and System",
+      "year": "2017",
+      "number": "CN105606102B",
+      "status": "Granted by CNIPA",
+      "inventors": "Jianga Shang, Xuke Hu, Wen Cheng"
+    },
+    {
+      "title": "Indoor Emergency Response Context-Aware Navigation System and Method",
+      "year": "2016",
+      "number": "CN103913165B",
+      "status": "Granted by CNIPA",
+      "inventors": "Jianga Shang, Fangwen Yu, Xuke Hu, Zhiyong Zhou, Jinjin Yan, Xiao Zhang, Xiaonan Wang, Xinyi Tang"
+    },
+    {
+      "title": "Wi-Fi Fingerprint Positioning Method Based on AP Collection Similarity",
+      "year": "2016",
+      "number": "CN103476115B",
+      "status": "Granted by CNIPA",
+      "inventors": "Jianga Shang, Xuke Hu, Fangwen Yu, Jinjin Yan, Fuqiang Gu"
+    }
+  ]
+}

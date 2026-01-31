@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Editorial Board Member",
+    "description": "The Photogrammetric Record (since 2026).",
+    "meta": "Editorial service"
+  },
+  {
+    "title": "Performance Bonus",
+    "description": "German Aerospace Center (DLR) in 2022, 2023, 2024, and 2025.",
+    "meta": "Honors & awards"
+  },
+  {
+    "title": "DLRGeoTweet Dataset",
+    "description": "Comprehensive social media geocoding corpus with fine-grained places (2024).",
+    "meta": "Dataset"
+  },
+  {
+    "title": "Toponym Resolution with LLMs",
+    "description": "IJGIS 2024 article on lightweight open-source LLMs and geo-knowledge.",
+    "meta": "Journal publication"
+  },
+  {
+    "title": "Location Reference Recognition Survey",
+    "description": "ACM Computing Surveys article on location reference recognition (2023).",
+    "meta": "Survey publication"
+  }
+]

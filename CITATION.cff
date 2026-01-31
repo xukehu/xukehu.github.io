@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Academic Homepage - Dr. rer. nat. Xuke Hu"
+message: "If you use this website template in academic work, please cite it."
+type: software
+authors:
+  - family-names: Hu
+    given-names: Xuke
+license: MIT
+url: "https://uhuohuy.github.io"
+date-released: "2026-01-30"

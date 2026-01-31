@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+import { existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { withBase } from '../utils/paths';
+
+const { size = 'md', className = '', priority = false } = Astro.props;
+
+const assetUrl = new URL('../assets/profile.jpg', import.meta.url);
+const hasLocal = existsSync(fileURLToPath(assetUrl));
+let localImage = null;
+if (hasLocal) {
+  localImage = (await import('../assets/profile.jpg')).default;
+}
+
+const sizeMap = {
+  sm: 96,
+  md: 128,
+  lg: 168
+};
+
+const dimension = sizeMap[size] || sizeMap.md;
+const classes = `rounded-2xl border border-white/60 shadow-soft ring-1 ring-ink-200/40 dark:ring-ink-700/60 ${className}`;
+const alt = 'Portrait of Dr. rer. nat. Xuke Hu';
+const fallbackSrc = withBase('/profile.jpg');
+---
+{localImage ? (
+  <Image
+    src={localImage}
+    alt={alt}
+    width={dimension}
+    height={dimension}
+    class={classes}
+    sizes="(max-width: 640px) 96px, 168px"
+    priority={priority}
+  />
+) : (
+  <img
+    src={fallbackSrc}
+    alt={alt}
+    width={dimension}
+    height={dimension}
+    class={classes}
+    loading={priority ? 'eager' : 'lazy'}
+  />
+)}

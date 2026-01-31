@@ -1,0 +1,95 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import profile from '../data/profile.json';
+import '../styles/global.css';
+
+const {
+  title = '',
+  description = 'Academic profile of Dr. rer. nat. Xuke Hu, Senior Researcher at the German Aerospace Center (DLR), Institute of Data Science.',
+  isHome = false
+} = Astro.props;
+
+const baseTitle = 'Dr. rer. nat. Xuke Hu';
+const fullTitle = title ? `${title} | ${baseTitle}` : baseTitle;
+const base = import.meta.env.BASE_URL;
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+const ogImage = new URL(`${base}og-card.png`, Astro.site).toString();
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: profile.name,
+  affiliation: profile.affiliation,
+  email: profile.email,
+  url: profile.links.website,
+  sameAs: profile.links.sameAs
+};
+---
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{fullTitle}</title>
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (() => {
+        try {
+          const stored = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const theme = stored || (prefersDark ? 'dark' : 'light');
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+        } catch (err) {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+  </head>
+  <body class="min-h-screen bg-white text-ink-800 dark:bg-ink-900 dark:text-ink-100">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <Navbar />
+    <main id="main-content" class="min-h-[60vh]">
+      <slot />
+    </main>
+    <Footer />
+    {isHome && (
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+    )}
+    <script>
+      (() => {
+        const toggle = document.getElementById('theme-toggle');
+        if (!toggle) return;
+        const setTheme = (theme) => {
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+          localStorage.setItem('theme', theme);
+          toggle.setAttribute('aria-pressed', theme === 'dark');
+        };
+        const current = document.documentElement.dataset.theme || 'light';
+        toggle.setAttribute('aria-pressed', current === 'dark');
+        toggle.addEventListener('click', () => {
+          const next = (document.documentElement.dataset.theme || 'light') === 'dark' ? 'light' : 'dark';
+          setTheme(next);
+        });
+      })();
+    </script>
+  </body>
+</html>

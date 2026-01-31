@@ -1,0 +1,47 @@
+[
+  {
+    "group": "Teaching",
+    "items": [
+      {
+        "title": "Geo404",
+        "period": "since 2021",
+        "details": "Instructed graduate students in Geography and Computer Science, co-teaching with Dr. Jens Kersten.",
+        "institution": "Friedrich Schiller University Jena"
+      }
+    ]
+  },
+  {
+    "group": "Ph.D. supervision",
+    "items": [
+      {
+        "title": "Jan Bongard, Ph.D. candidate",
+        "period": "since 2025",
+        "details": "Quality-Aware and Multimodal Geospatial Data Fusion for Decision-Making.",
+        "institution": "Friedrich Schiller University Jena"
+      }
+    ]
+  },
+  {
+    "group": "Thesis supervision",
+    "items": [
+      {
+        "title": "Tim Grünemay, B.Sc.",
+        "period": "since 2021",
+        "details": "Comparison of Geoparsing Methods for Social Media Short Messages.",
+        "institution": "Friedrich Schiller University Jena"
+      },
+      {
+        "title": "Justin Jose, M.Sc.",
+        "period": "since 2021",
+        "details": "Automated Classification of Sleep-Disruptive Audio Events Under Real World Conditions.",
+        "institution": "Ilmenau University of Technology"
+      },
+      {
+        "title": "Ahmed Abdelsalam, M.Sc.",
+        "period": "since 2021",
+        "details": "Estimating Building Attributes from Street-level Imagery using Vision-Language Models.",
+        "institution": "Technische Universität München"
+      }
+    ]
+  }
+]

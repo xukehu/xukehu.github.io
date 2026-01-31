@@ -1,0 +1,26 @@
+{
+  "name": "xuke-hu-academic-site",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "build:user": "PUBLIC_BASE_PATH=/ PUBLIC_SITE_URL=https://uhuohuy.github.io astro build",
+    "build:project": "PUBLIC_BASE_PATH=/$npm_package_config_repo PUBLIC_SITE_URL=https://uhuohuy.github.io/$npm_package_config_repo astro build"
+  },
+  "config": {
+    "repo": "YOUR_REPO_NAME"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.1.7",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.16.2",
+    "tailwindcss": "^3.4.10"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45"
+  }
+}

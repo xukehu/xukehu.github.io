@@ -1,0 +1,31 @@
+---
+import profile from '../data/profile.json';
+import { withBase } from '../utils/paths';
+const year = new Date().getFullYear();
+---
+<footer class="border-t border-ink-100/70 bg-white/80 dark:border-ink-800/60 dark:bg-ink-900/70">
+  <div class="mx-auto max-w-content px-6 py-10">
+    <div class="grid gap-6 md:grid-cols-3">
+      <div>
+        <div class="text-lg font-semibold text-ink-800 dark:text-ink-100">{profile.name}</div>
+        <p class="mt-2 text-sm text-muted">{profile.affiliation}</p>
+        <p class="text-sm text-muted">{profile.location}</p>
+      </div>
+      <div>
+        <div class="text-sm font-semibold">Quick Links</div>
+        <ul class="mt-2 space-y-2 text-sm">
+          <li><a href={withBase('/publications/')}>Publications</a></li>
+          <li><a href={withBase('/projects/')}>Projects & datasets</a></li>
+          <li><a href={withBase('/service/')}>Academic service</a></li>
+          <li><a href={withBase('/contact/')}>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-sm font-semibold">Contact</div>
+        <p class="mt-2 text-sm text-muted">{profile.email}</p>
+        <p class="text-sm text-muted">{profile.address}</p>
+      </div>
+    </div>
+    <div class="mt-8 text-xs text-muted">© {year} {profile.name}. Built with Astro.</div>
+  </div>
+</footer>
